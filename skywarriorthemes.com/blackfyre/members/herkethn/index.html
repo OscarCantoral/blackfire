@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html  lang="en-US" >
+    <head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <style>
+
+/* Customs colours for the site
+ *
+ * Include colours and backgrounds
+ *
+ * */
+
+
+
+#buddypress div#item-header div#item-meta .highlight, #buddypress div#item-header div#item-meta .activity, .post-review-numbers .overall-score b, .bbp-forum-content ul.sticky .fa-comment, .bbp-topics ul.sticky .fa-comment, .bbp-topics ul.super-sticky .fa-comment, .bbp-topics-front ul.super-sticky .fa-comment, #buddypress .activity-list li.load-more a, body .vc_carousel.vc_per-view-more .vc_carousel-slideline .vc_carousel-slideline-inner > .vc_item > .vc_inner h2 a:hover,
+#bbpress-forums fieldset.bbp-form legend, .newsbh li:hover a, .newsbv li:hover a, .cart-notification span.item-name, .woocommerce div.product p.price, .price span.amount,
+.woocommerce .widget_shopping_cart .total span, .nm-date span, .cart-notification span.item-name, .woocommerce div.product p.price, .price span.amount,
+.dropdown:hover .dropdown-menu li > a:hover, .clan-generali .clan-members-app > .fas,.blog-rating .overall-score i, .post-review .overall-score i, .post-review .score i, 
+.nextmatch_wrap:hover .nm-clans span, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus,
+input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus,
+input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus{
+	color:#25c2f5 !important;
+}
+
+.item-options#members-list-options a.selected, .item-options#members-list-options a:hover, .item-options#members-list-options, .item-options#groups-list-options a.selected, .item-options#groups-list-options a:hover, .item-options#groups-list-options, .gallery-item a img, .match-map .map-image img, .nextmatch_wrap:hover img, .wrap:hover .clan1img, .matchimages img, .dropdown-menu, .widget .clanwar-list > li:first-child, .footer_widget .clanwar-list > li:first-child{
+	border-color:#25c2f5 !important;
+}
+
+#buddypress div.item-list-tabs ul li a span, .widget.clanwarlist-page .clanwar-list .date strong, .footer_widget.clanwarlist-page .clanwar-list .date strong, #matches .mminfo span, .footer_widget .clanwar-list .home-team, .footer_widget .clanwar-list .vs, .footer_widget .clanwar-list .opponent-team, .widget .clanwar-list .home-team, .widget .clanwar-list .vs, .widget .clanwar-list .opponent-team, div.bbp-template-notice, div.indicator-hint, .social a , .widget-title i, .profile-clans a:hover, .friendswrapper .friends-count i, .slider_com_wrap, .portfolio .row .span8 .plove a:hover, .span3 .plove a:hover, .icons-block i:hover, .navbar-inverse .nav > li > a > span,
+ .similar-projects ul li h3,
+ .member h3, .main-colour,a, .dropdown-menu li > a:hover, .wallnav i, .blog-rating .overall-score .rating, div.rating:after, footer .copyright .social a:hover, .navbar-inverse .brand:hover, .member:hover > .member-social a, footer ul li a:hover, .widget ul li a:hover, .next_slide_text .fa-bolt ,
+  .dropdown-menu li > a:focus, .dropdown-submenu:hover > a,
+  .comment-body .comment-author,  .navigation a:hover, .cart-wrap a, .bx-next-out:hover .next-arrow:before, body .navbar-wrapper .login-info .login-btn{
+    color:#25c2f5;
+}
+body .bbp-pagination-links a:hover, body .bbp-pagination-links span.current, .post-review-numbers.post-review .progress .progress-bar, .item-options#members-list-options a.selected, .item-options#members-list-options a:hover, .item-options#groups-list-options a.selected, .item-options#groups-list-options a:hover,div.pagination a:focus, div.pagination a:hover, div.pagination span.current, .page-numbers:focus, .page-numbers:hover, .page-numbers.current, body.woocommerce nav.woocommerce-pagination ul li a:focus, body.woocommerce nav.woocommerce-pagination ul li a:hover, body.woocommerce nav.woocommerce-pagination ul li span.current, .widget .clanwar-list .tabs li:hover a, .widget .clanwar-list .tabs li.selected a, .bgpattern, .post-review, .widget_shopping_cart, .woocommerce .cart-notification, .cart-notification, .splitter li[class*="selected"] > a, .splitter li a:hover, .ls-wp-container .ls-nav-prev, .ls-wp-container .ls-nav-next, a.ui-accordion-header-active, .accordion-heading:hover, .block_accordion_wrapper .ui-state-hover, .cart-wrap, .clanwar-list li ul.tabs li:hover, .clanwar-list li ul.tabs li.selected a:hover, .clanwar-list li ul.tabs li.selected a, .dropdown .caret,
+.tagcloud a:hover, .progress-striped .bar ,  .bgpattern:hover > .icon, .progress-striped .bar, .member:hover > .bline, .blog-date span.date,
+ .pbg, .pbg:hover, .pimage:hover > .pbg, ul.social-media li a:hover, .navigation a ,body .theChampCommentingTabs li,
+ .pagination ul > .active > a, .pagination ul > .active > span, .list_carousel a.prev:hover, .list_carousel a.next:hover, .title_wrapper, .pricetable .pricetable-col.featured .pt-price, .block_toggle .open, .pricetable .pricetable-featured .pt-price, .isotopeMenu, .bbp-topic-title h3, .modal-body .reg-btn, #LoginWithAjax_SubmitButton .reg-btn, .title-wrapper, .footer_widget h3, buddypress div.item-list-tabs ul li.selected a, .results-main-bg, .blog-date-noimg, .blog-date, .ticker-wrapper.has-js, .ticker-swipe  {
+    background-color:#25c2f5;
+}
+
+
+.vc_tta-tab, #matches .match-fimage .mversus .deletematch, .social-top a, .navbar-wrapper .login-info .login-btn .fas,
+.clanwar-list .upcoming, #matches ul.cmatchesw li .deletematch, body .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title,
+.navbar-inverse .navbar-nav > li > a, .friendswrapper .add-friend, .msg_ntf,
+.footer_widget .clanwar-list .scores, .widget .clanwar-list .scores, .user-avatar, .woocommerce-page .product-wrap a.button, .button-medium, a.group-button, .button-small, .button-big, button[type="submit"], #TB_ajaxContent button#save, input[type="submit"], input[type="button"],
+.footer_widget .clanwar-list .upcoming, .widget .clanwar-list .upcoming, .user-wrap a.btns, .cart-outer,
+.footer_widget .clanwar-list .playing, .widget .clanwar-list .playing, .pricetable .pricetable-col.featured .pt-top, .pricetable .pricetable-featured .pt-top,
+.after-nav .login-tag, .next-line, .bx-wrapper .bx-pager.bx-default-pager a:hover:before,
+.bx-wrapper .bx-pager.bx-default-pager a.active:before, .after-nav .login-info a, .clan-page .clan-nav li, .wpb_tabs_nav li, .nav-tabs > li,
+ #buddypress div.item-list-tabs ul li,
+ .blog-date span.date, .blog-date-noimg span.date, .clanwar-list .draw, .carousel-indicators .active, .after-nav .login-info input[type="submit"], .after-nav .login-info a:hover{
+	background-image: -webkit-linear-gradient(bottom, #096aa1, #26c3f6);
+	background-image: -moz-linear-gradient(bottom, #096aa1, #26c3f6);
+	background-image: -o-linear-gradient(bottom, #096aa1, #26c3f6);
+	background-image: linear-gradient(to top, #096aa1, #26c3f6);
+}
+.ticker-title{
+	background-image: -webkit-linear-gradient(bottom, #26c3f6, #096aa1);
+	background-image: -moz-linear-gradient(bottom, #26c3f6, #096aa1);
+	background-image: -o-linear-gradient(bottom, #26c3f6, #096aa1);
+	background-image: linear-gradient(to top, #26c3f6, #096aa1);
+}
+.blog-date span.date, .blog-date-noimg span.date, .clanwar-list .upcoming, .carousel-indicators .active{
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.6), inset 0px 0px 1px 1px #05c7f7;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.6), inset 0px 0px 1px 1px #05c7f7;
+	box-shadow: 0 1px 2px rgba(0,0,0,.6), inset 0px 0px 1px 1px #05c7f7;
+}
+.slider_com_wrap *{
+	color:#26c3f6 !important;
+}
+
+.vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-title , .vc_tta-tab, .pricetable .pricetable-col.featured .pt-top, .pricetable .pricetable-featured .pt-top,
+.after-nav .login-tag, .next-line, .bx-wrapper .bx-pager.bx-default-pager a:hover:before,
+.bx-wrapper .bx-pager.bx-default-pager a.active:before, .after-nav .login-info a,
+.widget .clanwar-list .tabs li:hover a,
+.after-nav .login-info input[type="submit"], .after-nav .login-info a, input[type="button"],
+.match-map .map-score,
+.footer_widget .clanwar-list .scores,
+.footer_widget .clanwar-list .upcoming,
+.footer_widget .clanwar-list .playing,
+.widget .clanwar-list .scores,
+.widget .clanwar-list .upcoming,
+.widget .clanwar-list .playing, .msg_ntf,
+.clanwar-list .draw, .user-avatar,
+.navbar-inverse .navbar-nav > li.active > a,
+.footer_widget .clanwar-list .tabs li:hover a,
+.footer_widget .clanwar-list .tabs li.selected a,
+.widget .clanwar-list .tabs li:hover a,
+.widget .clanwar-list .tabs li.selected a, .bx-wrapper .bx-pager.bx-default-pager a:hover:before,
+.bx-wrapper .bx-pager.bx-default-pager a.active:before{
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3), inset 0 0 1px 1px #05c7f7;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.3), inset 0 0 1px 1px #05c7f7;
+	box-shadow: 0 1px 2px rgba(0,0,0,.3), inset 0 0 1px 1px #05c7f7;
+}
+.cart-outer, .friendswrapper .add-friend, .social-top a,  .ticker-title, .user-wrap a.btns, #buddypress div.item-list-tabs ul li, .clan-page .clan-nav li, .wpb_tabs_nav li, .nav-tabs > li,
+.woocommerce-page .product-wrap a.button, a.group-button, .button-medium, .button-small, .button-big, button[type="submit"],  input[type="submit"], #TB_ajaxContent button#save{
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0), inset 0 0 1px 1px #05c7f7;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0), inset 0 0 1px 1px #05c7f7;
+	box-shadow: 0 1px 2px rgba(0,0,0,0), inset 0 0 1px 1px #05c7f7;
+}
+.cart-outer:hover, .wpb_tabs_nav li:hover, .nav-tabs > li:hover, .clan-page .clan-nav li:hover, .woocommerce-page .product-wrap a.button:hover, .button-medium:hover, .button-small:hover, .button-big:hover, button[type="submit"]:hover, #TB_ajaxContent button#save:hover, input[type="submit"]:hover, #sitewide-notice p,
+.friendswrapper .add-friend:hover, #buddypress div.item-list-tabs ul li:hover, .user-wrap a.btns:hover,.social-top a:hover, .navbar-inverse .navbar-nav > li.current-menu-item > a, .navbar-inverse .navbar-nav > li > a:hover, .navbar-wrapper .login-info .login-btn .fas{
+	-webkit-box-shadow: 0 0 10px rgba(5,199,247,0.5), inset 0 0 1px 1px #05c7f7;
+	-moz-box-shadow: 0 0 10px rgba(5,199,247,0.5), inset 0 0 1px 1px #05c7f7;
+	box-shadow: 0 0 10px rgba(5,199,247,0.5), inset 0 0 1px 1px #05c7f7;
+}
+
+.button-medium, .button-small, .button-big, button[type="submit"], input[type="submit"], #TB_ajaxContent button#save{
+	background-color:#25c2f5;
+}
+
+.after-nav, .ticker-title:after{
+	 border-color: #26c3f6;
+}
+.next-arrow{
+	border-left: 30px solid #26c3f6;
+}
+body .bbp-pagination-links a, body .bbp-pagination-links span.current, body .bbp-pagination-links a:hover, body .bbp-pagination-links span.current, .page-numbers, .newsbv li:hover .newsb-thumbnail, .newsbh li:hover .newsb-thumbnail a, div.bbp-template-notice, div.indicator-hint,  div.pagination a, div.pagination span,body.woocommerce nav.woocommerce-pagination ul li a, body.woocommerce nav.woocommerce-pagination ul li span{
+	border: 1px solid #25c2f5;
+}
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button, .woocommerce div.product .woocommerce-tabs ul.tabs li a, .woocommerce #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a {
+	background: #25c2f5  !important;
+}
+
+
+.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce #content input.button:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page #content input.button:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce table.cart td.actions .button.checkout-button, .button-medium:after, .button-small:after, .button-big:after, button[type="submit"]:after, #TB_ajaxContent button#save:after, input[type="submit"]:after {
+	opacity:0.8;
+}
+.woocommerce span.onsale, .woocommerce-page span.onsale, .woocommerce-message, .woocommerce-error, .woocommerce-info, .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range{
+	background:#25c2f5 !important;
+}
+
+.woocommerce .product-wrap .add_to_cart_button.added, .woocommerce .product-wrap .add_to_cart_button.added:hover {
+	opacity:0.8;
+}
+
+#matches.clanpage-matches .title-wrapper .widget-title{
+	background:url(https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/img/stripe.png) repeat top left rgba(5,199,247,0.3) !important;
+}
+div.bbp-template-notice, div.indicator-hint{
+	background:rgba(5,199,247,0.1);
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+.gallery-item a img:hover{
+	border-color:#25c2f5;
+}
+
+#bbpress-forums li.bbp-header, #bbpress-forums fieldset.bbp-form legend, .bbp-topic-title h3, .bbp-topics-front ul.super-sticky i.icon-comment,
+.bbp-topics ul.super-sticky i.icon-comment,
+.bbp-topics ul.sticky i.icon-comment,
+.bbp-forum-content ul.sticky i.icon-comment,
+.header-colour{
+/color:;
+}
+
+/* Backgrounds */
+
+html{
+	background-color:#1d2031;
+}
+body{
+        background-attachment: fixed !important;
+	background:url(https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/img/header.jpg) no-repeat center top;
+}
+
+</style>
+
+    <!--just vars that will be used later-->
+    <script type="text/javascript">
+        var templateDir = "https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre";
+        var homeUrl = "https://skywarriorthemes.com/blackfyre/";
+        var adminUrl = "https://skywarriorthemes.com/blackfyre/wp-admin/";
+        var ajaxurl = "https://skywarriorthemes.com/blackfyre/wp-admin/admin-ajax.php";
+        var slider_speed = "4000";
+    </script>
+
+<title>Herkethn &#8211; Blackfyre</title>
+<style>
+            /* Cover image - Do not forget this part */
+            #buddypress #header-cover-image {
+                height: 225px;
+                background-image: url();
+                background-position: center top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border: 0;
+                display: block;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+
+            .group-create  #buddypress #header-cover-image {
+                position: relative !important;
+            }
+            </style>
+        	<script type="text/javascript">function theChampLoadEvent(e){var t=window.onload;if(typeof window.onload!="function"){window.onload=e}else{window.onload=function(){t();e()}}}</script>
+		<script type="text/javascript">var theChampDefaultLang = 'en_US', theChampCloseIconPath = 'https://skywarriorthemes.com/blackfyre/wp-content/plugins/super-socializer/images/close.png';</script>
+		<script> var theChampSiteUrl = 'https://skywarriorthemes.com/blackfyre', theChampVerified = 0, theChampEmailPopup = 0; </script>
+			<script> var theChampFBKey = '', theChampFBLang = 'en_US', theChampFbLikeMycred = 0, theChampSsga = 0, theChampCommentNotification = 0, theChampHeateorFcmRecentComments = 0, theChampFbIosLogin = 0; </script>
+						<script type="text/javascript">var theChampFBCommentUrl = 'https://skywarriorthemes.com/blackfyre/members/herkethn/'; var theChampFBCommentColor = ''; var theChampFBCommentNumPosts = ''; var theChampFBCommentWidth = '100%'; var theChampFBCommentOrderby = ''; var theChampCommentingTabs = "wordpress,facebook,disqus", theChampGpCommentsUrl = 'https://skywarriorthemes.com/blackfyre/members/herkethn/', theChampDisqusShortname = '', theChampScEnabledTabs = 'wordpress,fb', theChampScLabel = 'Leave a reply', theChampScTabLabels = {"wordpress":"Default Comments (34)","fb":"Facebook Comments","disqus":"Disqus Comments"}, theChampGpCommentsWidth = 0, theChampCommentingId = 'respond'</script>
+					<style type="text/css">.the_champ_horizontal_sharing .theChampSharing{
+					color: #fff;
+				border-width: 0px;
+		border-style: solid;
+		border-color: transparent;
+	}
+		.the_champ_horizontal_sharing .theChampTCBackground{
+		color:#666;
+	}
+		.the_champ_horizontal_sharing .theChampSharing:hover{
+				border-color: transparent;
+	}
+	.the_champ_vertical_sharing .theChampSharing{
+					color: #fff;
+				border-width: 0px;
+		border-style: solid;
+		border-color: transparent;
+	}
+		.the_champ_vertical_sharing .theChampTCBackground{
+		color:#666;
+	}
+		.the_champ_vertical_sharing .theChampSharing:hover{
+				border-color: transparent;
+	}
+	@media screen and (max-width:783px){.the_champ_vertical_sharing{display:none!important}}div.heateor_ss_mobile_footer{display:none;}@media screen and (max-width:783px){i.theChampTCBackground{background-color:white!important}div.the_champ_bottom_sharing{width:100%!important;left:0!important;}div.the_champ_bottom_sharing li{width:12.5% !important;}div.the_champ_bottom_sharing .theChampSharing{width: 100% !important;}div.the_champ_bottom_sharing div.theChampTotalShareCount{font-size:1em!important;line-height:28px!important}div.the_champ_bottom_sharing div.theChampTotalShareText{font-size:.7em!important;line-height:0px!important}div.heateor_ss_mobile_footer{display:block;height:40px;}.the_champ_bottom_sharing{padding:0!important;display:block!important;width: auto!important;bottom:-2px!important;top: auto!important;}.the_champ_bottom_sharing .the_champ_square_count{line-height: inherit;}.the_champ_bottom_sharing .theChampSharingArrow{display:none;}.the_champ_bottom_sharing .theChampTCBackground{margin-right: 1.1em !important}}</style>
+	<meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Blackfyre &raquo; Feed" href="https://skywarriorthemes.com/blackfyre/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Blackfyre &raquo; Comments Feed" href="https://skywarriorthemes.com/blackfyre/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/skywarriorthemes.com\/blackfyre\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.5"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='jquery-tipsy-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/addons/clan-wars/js/tipsy/tipsy.css?ver=0.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://skywarriorthemes.com/blackfyre/wp-includes/css/dist/block-library/style.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=2.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bbp-default-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/bbpress.css?ver=2.5.14-6684' type='text/css' media='screen' />
+<link rel='stylesheet' id='bp-parent-css-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/buddypress.css?ver=5.0.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.7.1' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.7.1' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='blackfyre_style-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/style.css?ver=20150401' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-cw-sitecss-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/addons/clan-wars/css/site.css?ver=1.5.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-cw-widgetcss-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/addons/clan-wars/css/widget.css?ver=1.5.5' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='https://use.fontawesome.com/releases/v5.0.8/css/all.css?ver=20130401' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-shadowbox-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/shadowbox.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-easy-slider-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/easy-slider.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-tooltip-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/tooltip.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-bootstrap-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/bootstrap.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-main-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/main.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-bbpress-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/bbpress.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-woocommerce-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/woocommerce.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-buddypress-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/buddypress.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-clanwars-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/clanwars.css?ver=20160930' type='text/css' media='all' />
+<link rel='stylesheet' id='blackfyre-fonts-css'  href='//fonts.googleapis.com/css?family=Oswald%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic++++++++%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic++++++++%7COpen%2BSans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style1-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/jquery.fancybox.css?ver=20150401' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style2-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/jquery.bxslider.css?ver=20150401' type='text/css' media='all' />
+<link rel='stylesheet' id='animatecss-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/animate.css?ver=20150401' type='text/css' media='all' />
+<link rel='stylesheet' id='vcfixes-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/css/vcfixes.css?ver=20150401' type='text/css' media='all' />
+<link rel='stylesheet' id='buttons-css'  href='https://skywarriorthemes.com/blackfyre/wp-includes/css/buttons.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://skywarriorthemes.com/blackfyre/wp-includes/css/dashicons.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='https://skywarriorthemes.com/blackfyre/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.6-78496d1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://skywarriorthemes.com/blackfyre/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='media-views-css'  href='https://skywarriorthemes.com/blackfyre/wp-includes/css/media-views.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='imgareaselect-css'  href='https://skywarriorthemes.com/blackfyre/wp-includes/js/imgareaselect/imgareaselect.css?ver=0.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='the_champ_frontend_css-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/plugins/super-socializer/css/front.css?ver=7.12.37' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='vc_lte_ie9-css'  href='https://skywarriorthemes.com/blackfyre/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css?ver=6.0.5' type='text/css' media='screen' />
+<![endif]-->
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/addons/clan-wars/js/jquery.cookie.pack.js?ver=1.5.5'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/addons/clan-wars/js/tabs.js?ver=1.5.5'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/addons/clan-wars/js/tipsy/jquery.tipsy.js?ver=0.1.7'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/addons/clan-wars/js/public.js?ver=1.5.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var BP_Confirm = {"are_you_sure":"Are you sure?"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/plugins/buddypress/bp-core/js/confirm.min.js?ver=5.0.0'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/plugins/buddypress/bp-core/js/widget-members.min.js?ver=5.0.0'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js?ver=5.0.0'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-cookie.min.js?ver=5.0.0'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-scroll-to.min.js?ver=5.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var BP_DTheme = {"accepted":"Accepted","close":"Close","comments":"comments","leave_group_confirm":"Are you sure you want to leave this group?","mark_as_fav":"Favorite","my_favs":"My Favorites","rejected":"Rejected","remove_fav":"Remove Favorite","show_all":"Show all","show_all_comments":"Show all comments for this thread","show_x_comments":"Show all comments (%d)","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","view":"View","store_filter_settings":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/plugins/buddypress/bp-templates/bp-legacy/js/buddypress.min.js?ver=5.0.0'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/blackfyre\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/blackfyre\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/skywarriorthemes.com\/blackfyre\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.7.1'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=6.0.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/blackfyre\/","uid":"0","time":"1584810946","secure":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-includes/js/utils.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-includes/js/plupload/moxie.min.js?ver=1.3.5'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-includes/js/plupload/plupload.min.js?ver=2.1.9'></script>
+<!--[if lt IE 8]>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-includes/js/json2.min.js?ver=2015-05-03'></script>
+<![endif]-->
+<script type='text/javascript'>
+var mejsL10n = {"language":"en","strings":{"mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen-off":"Turn off Fullscreen","mejs.fullscreen-on":"Go Fullscreen","mejs.download-video":"Download Video","mejs.fullscreen":"Fullscreen","mejs.time-jump-forward":["Jump forward 1 second","Jump forward %1 seconds"],"mejs.loop":"Toggle Loop","mejs.play":"Play","mejs.pause":"Pause","mejs.close":"Close","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.time-skip-back":["Skip back 1 second","Skip back %1 seconds"],"mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.mute-toggle":"Mute Toggle","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.ad-skip":"Skip ad","mejs.ad-skip-info":["Skip in 1 second","Skip in %1 seconds"],"mejs.source-chooser":"Source Chooser","mejs.stop":"Stop","mejs.speed-rate":"Speed Rate","mejs.live-broadcast":"Live Broadcast","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1'></script>
+<script type='text/javascript' src='https://skywarriorthemes.com/blackfyre/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.2.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/blackfyre\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<link rel='https://api.w.org/' href='https://skywarriorthemes.com/blackfyre/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://skywarriorthemes.com/blackfyre/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://skywarriorthemes.com/blackfyre/wp-includes/wlwmanifest.xml" /> 
+<link rel="alternate" type="application/json+oembed" href="https://skywarriorthemes.com/blackfyre/wp-json/oembed/1.0/embed?url" />
+<link rel="alternate" type="text/xml+oembed" href="https://skywarriorthemes.com/blackfyre/wp-json/oembed/1.0/embed?url&#038;format=xml" />
+
+	<script type="text/javascript">var ajaxurl = 'https://skywarriorthemes.com/blackfyre/wp-admin/admin-ajax.php';</script>
+
+<!--[if IE 9]> <script>var _gambitParallaxIE9 = true;</script> <![endif]--><script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//skywarriorthemes.com/blackfyre/?wordfence_lh=1&hid=5832B483FCCE8F5EA72B24721A60ED45');
+</script>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+
+	<link rel="alternate" type="application/rss+xml" title="Blackfyre | Herkethn | Activity RSS Feed" href="https://skywarriorthemes.com/blackfyre/members/herkethn/activity/feed/" />
+
+
+	<link rel="alternate" type="application/rss+xml" title="Blackfyre | Site Wide Activity RSS Feed" href="https://skywarriorthemes.com/blackfyre/activity/feed/" />
+
+<link rel='canonical' href='https://skywarriorthemes.com/blackfyre/members/herkethn/' />
+<link rel="icon" href="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/02/cropped-logo-helmet-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/02/cropped-logo-helmet-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/02/cropped-logo-helmet-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/02/cropped-logo-helmet-270x270.jpg" />
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+</head>
+<body class="xprofile bp-user my-profile profile public buddypress bp-legacy bbp-user-page single singular bbpress page-template-default page page-id-0 page-parent theme-blackfyre woocommerce-no-js wpb-js-composer js-comp-ver-6.0.5 vc_responsive no-js">
+<div id="main_wrapper">
+
+<!-- color styles -->
+<link rel="stylesheet" href="https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/colorstyles/picker.css">
+<script type="text/javascript" src="https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/colorstyles/demo.js"></script>
+
+<script type="text/html" id="css-color">
+
+
+body .vc_carousel.vc_per-view-more .vc_carousel-slideline .vc_carousel-slideline-inner > .vc_item > .vc_inner h2 a:hover,
+#bbpress-forums fieldset.bbp-form legend, .newsbh li:hover a, .newsbv li:hover a, .cart-notification span.item-name, .woocommerce div.product p.price, .price span.amount,
+.woocommerce .widget_shopping_cart .total span, .nm-date span, .cart-notification span.item-name, .woocommerce div.product p.price, .price span.amount,
+.dropdown:hover .dropdown-menu li > a:hover, .clan-generali .clan-members-app > .fa,
+.nextmatch_wrap:hover .nm-clans span, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus,
+input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus,
+input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus
+{
+    color:%color% !important;
+}
+#buddypress div.item-list-tabs ul li a span, .widget.clanwarlist-page .clanwar-list .date strong, .footer_widget.clanwarlist-page .clanwar-list .date strong, #matches .mminfo span, .footer_widget .clanwar-list .home-team, .footer_widget .clanwar-list .vs, .footer_widget .clanwar-list .opponent-team, .widget .clanwar-list .home-team, .widget .clanwar-list .vs, .widget .clanwar-list .opponent-team, div.bbp-template-notice, div.indicator-hint, .social a, .widget-title i, .profile-clans a:hover, .friendswrapper .friends i, .slider_com_wrap, .portfolio .row .span8 .plove a:hover, .span3 .plove a:hover, .icons-block i:hover, .navbar-inverse .nav > li > a > span, .similar-projects ul li h3, .member h3, .main-colour, a, .dropdown-menu li > a:hover, .wallnav i, div.rating:after, footer .copyright .social a:hover, .navbar-inverse .brand:hover, .member:hover > .member-social a, footer ul li a:hover, .widget ul li a:hover, .next_slide_text .fa-bolt, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a, .comment-body .comment-author, .navigation a:hover, .cart-wrap a, .bx-next-out:hover .next-arrow:before, body .navbar-wrapper .login-info .login-btn{
+    color:%color%;
+  }
+.gallery-item a img, .match-map .map-image img, .nextmatch_wrap:hover img, .wrap:hover .clan1img, .matchimages img, .dropdown-menu, .widget .clanwar-list > li:first-child, .footer_widget .clanwar-list > li:first-child{
+    border-color:%color% !important;
+}
+div.pagination a:focus, div.pagination a:hover, div.pagination span.current, body.woocommerce nav.woocommerce-pagination ul li a:focus, body.woocommerce nav.woocommerce-pagination ul li a:hover, body.woocommerce nav.woocommerce-pagination ul li span.current, .widget .clanwar-list .tabs li:hover a, .widget .clanwar-list .tabs li.selected a, .bgpattern, .widget_shopping_cart, .woocommerce .cart-notification, .cart-notification, .splitter li[class*="selected"] > a, .splitter li a:hover, .ls-wp-container .ls-nav-prev, .ls-wp-container .ls-nav-next, a.ui-accordion-header-active, .accordion-heading:hover, .block_accordion_wrapper .ui-state-hover, .cart-wrap, .clanwar-list li ul.tabs li:hover, .clanwar-list li ul.tabs li.selected a:hover, .clanwar-list li ul.tabs li.selected a, .dropdown .caret,
+.tagcloud a:hover, .progress-striped .bar ,  .bgpattern:hover > .icon, .progress-striped .bar, .member:hover > .bline, .blog-date span.date,
+ .pbg, .pbg:hover, .pimage:hover > .pbg, ul.social-media li a:hover, .navigation a ,
+ .pagination ul > .active > a, .pagination ul > .active > span, .list_carousel a.prev:hover, .list_carousel a.next:hover, .title_wrapper, .pricetable .pricetable-col.featured .pt-price, .block_toggle .open, .pricetable .pricetable-featured .pt-price, .isotopeMenu, .bbp-topic-title h3, .modal-body .reg-btn, #LoginWithAjax_SubmitButton .reg-btn, buddypress div.item-list-tabs ul li.selected a, .results-main-bg, .blog-date-noimg, .blog-date, .ticker-wrapper.has-js, .ticker-swipe {
+    background-color:%color% !important;
+}
+.button-medium, .button-small, .button-big, button[type="submit"], input[type="submit"]{
+    background-color:%color% ;
+}
+.after-nav, .ticker-title:after{
+     border-color: %color%;
+}
+.social-top a, .navbar-wrapper .login-info .login-btn .fa,
+.clanwar-list .upcoming, #matches ul.cmatchesw li .deletematch,
+.navbar-inverse .navbar-nav > li > a, .friendswrapper .add-friend, .msg_ntf,
+.footer_widget .clanwar-list .scores, .widget .clanwar-list .scores, .user-avatar, .woocommerce-page .product-wrap a.button, .button-medium, .button-small, .button-big, button[type="submit"], input[type="submit"], input[type="button"],
+.footer_widget .clanwar-list .upcoming, .widget .clanwar-list .upcoming, .user-wrap a.btns, .cart-outer,
+.footer_widget .clanwar-list .playing, .widget .clanwar-list .playing, .pricetable .pricetable-col.featured .pt-top, .pricetable .pricetable-featured .pt-top,
+.after-nav .login-tag, .next-line, .bx-wrapper .bx-pager.bx-default-pager a:hover:before,
+.bx-wrapper .bx-pager.bx-default-pager a.active:before, .after-nav .login-info a, .clan-page .clan-nav li, .wpb_tabs_nav li, .nav-tabs > li,
+ #buddypress div.item-list-tabs ul li,
+ .blog-date span.date, .blog-date-noimg span.date, .clanwar-list .draw, .carousel-indicators .active, .after-nav .login-info input[type="submit"], .after-nav .login-info a:hover{
+
+
+     background-image: -moz-linear-gradient(top, %color% 0%, %bottomgrad% 100%);
+     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,%color%), color-stop(100%,%bottomgrad%));
+     background-image: -webkit-linear-gradient(top, %color% 0%,%bottomgrad% 100%);
+     background-image: -o-linear-gradient(top, %color% 0%,%bottomgrad% 100%);
+     background-image: -ms-linear-gradient(top, %color% 0%,%bottomgrad% 100%);
+     background-image: linear-gradient(to bottom, %color% 0%,%bottomgrad% 100%);
+
+}
+.ticker-title{
+    background-image: -moz-linear-gradient(top, %bottomgrad% 0%, %color% 100%);
+     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,%bottomgrad%), color-stop(100%,%color%));
+     background-image: -webkit-linear-gradient(top, %bottomgrad% 0%,%color% 100%);
+     background-image: -o-linear-gradient(top, %bottomgrad% 0%,%color% 100%);
+     background-image: -ms-linear-gradient(top, %bottomgrad% 0%,%color% 100%);
+     background-image: linear-gradient(to bottom, %bottomgrad% 0%,%color% 100%);
+}
+.blog-date span.date, .blog-date-noimg span.date, .clanwar-list .upcoming, .carousel-indicators .active{
+
+}
+.slider_com_wrap *{
+    color:%color% !important;
+}
+
+.pricetable .pricetable-col.featured .pt-top, .pricetable .pricetable-featured .pt-top,
+.after-nav .login-tag, .next-line, .bx-wrapper .bx-pager.bx-default-pager a:hover:before,
+.bx-wrapper .bx-pager.bx-default-pager a.active:before, .after-nav .login-info a,
+.widget .clanwar-list .tabs li:hover a,
+.after-nav .login-info input[type="submit"], .after-nav .login-info a, input[type="button"],
+.match-map .map-score,
+.footer_widget .clanwar-list .scores,
+.footer_widget .clanwar-list .upcoming,
+.footer_widget .clanwar-list .playing,
+.widget .clanwar-list .scores,
+.widget .clanwar-list .upcoming,
+.widget .clanwar-list .playing, .msg_ntf,
+.clanwar-list .draw, .user-avatar,
+.navbar-inverse .navbar-nav > li.active > a,
+.footer_widget .clanwar-list .tabs li:hover a,
+.footer_widget .clanwar-list .tabs li.selected a,
+.widget .clanwar-list .tabs li:hover a,
+.widget .clanwar-list .tabs li.selected a, .bx-wrapper .bx-pager.bx-default-pager a:hover:before,
+.bx-wrapper .bx-pager.bx-default-pager a.active:before{
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3), inset 0 0 1px 1px %innershadow%; ?>;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.3), inset 0 0 1px 1px %innershadow%; ?>;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3), inset 0 0 1px 1px %innershadow%; ?>;
+}
+
+.cart-outer, .friendswrapper .add-friend, .social-top a,  .ticker-title, .user-wrap a.btns, #buddypress div.item-list-tabs ul li, .clan-page .clan-nav li, .wpb_tabs_nav li, .nav-tabs > li,
+.woocommerce-page .product-wrap a.button, .button-medium, .button-small, .button-big, button[type="submit"], input[type="submit"]{
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0), inset 0 0 1px 1px %innershadow%; ?>;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0), inset 0 0 1px 1px %innershadow%; ?>;
+    box-shadow: 0 1px 2px rgba(0,0,0,0), inset 0 0 1px 1px %innershadow%; ?>;
+}
+.cart-outer:hover, .wpb_tabs_nav li:hover, .nav-tabs > li:hover, .clan-page .clan-nav li:hover, .woocommerce-page .product-wrap a.button:hover, .button-medium:hover, .button-small:hover, .button-big:hover, button[type="submit"]:hover, input[type="submit"]:hover, #sitewide-notice p,
+.friendswrapper .add-friend:hover, #buddypress div.item-list-tabs ul li:hover, .user-wrap a.btns:hover,.social-top a:hover, .navbar-inverse .navbar-nav > li.current-menu-item > a, .navbar-inverse .navbar-nav > li > a:hover, .navbar-wrapper .login-info .login-btn .fa{
+    -webkit-box-shadow: 0 0 10px %innershadowo%, inset 0 0 1px 1px %innershadow%; ?>;
+    -moz-box-shadow: 0 0 10px %innershadowo%, inset 0 0 1px 1px %innershadow%; ?>;
+    box-shadow: 0 0 10px %innershadowo%, inset 0 0 1px 1px %innershadow%; ?>;
+}
+
+.after-nav, .ticker-title:after{
+     border-color: %color%;
+}
+.next-arrow{
+    border-left: 30px solid %color%;
+}
+.newsbv li:hover .newsb-thumbnail, .newsbh li:hover .newsb-thumbnail a, div.bbp-template-notice, div.indicator-hint,  div.pagination a, div.pagination span,body.woocommerce nav.woocommerce-pagination ul li a, body.woocommerce nav.woocommerce-pagination ul li span{
+    border: 1px solid %color% ;
+}
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button, .woocommerce div.product .woocommerce-tabs ul.tabs li a, .woocommerce #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a {
+    background: %color%   !important;
+}
+
+
+.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce #content input.button:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page #content input.button:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce table.cart td.actions .button.checkout-button, .button-medium:after, .button-small:after, .button-big:after, button[type="submit"]:after, input[type="submit"]:after {
+    opacity:0.8;
+}
+.woocommerce span.onsale, .woocommerce-page span.onsale, .woocommerce-message, .woocommerce-error, .woocommerce-info, .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range{
+    background:%color%  !important;
+}
+
+.woocommerce .product-wrap .add_to_cart_button.added, .woocommerce .product-wrap .add_to_cart_button.added:hover {
+    opacity:0.8;
+}
+
+div.bbp-template-notice, div.indicator-hint{
+    background:%color% ;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+.gallery-item a img:hover{
+border-color:%color% ;
+
+}
+
+
+</script>
+
+<script type="text/html" id="css-bck">
+
+body{
+    background-image: url(%background%);
+}
+
+</script>
+
+<script type="text/html" id="css-pat">
+
+body{
+    background-image: url(%pattern%);
+    background-repeat:repeat;
+}
+
+</script>
+
+<section class="sw-style" data-cookie-path="/skywarrior/">
+
+    <div class="toggle"><a style="font-size: 22px;" class="fas fa-tint"></a></div>
+
+    <div class="selector cf">
+        <div class="style-heading">Style Switcher</div>
+
+
+<!--
+        <div class="sw">
+            <div class="heading">Choose between full width or boxed version of the theme!</div>
+            <select class="layout-style">
+                   <option value="boxed">Boxed</option>
+                    <option value="">Full width</option>
+            </select>
+        </div>
+
+-->
+        <div class="sw">
+            <div class="heading">Play With Colors</div>
+
+            <div class="sample-colors">
+                <a href="#" class="sample-color blue active"></a>
+                <a href="#" class="sample-color green"></a>
+                <a href="#" class="sample-color yellow"></a>
+                <a href="#" class="sample-color orange"></a>
+                <a href="#" class="sample-color red"></a>
+            </div>
+        </div>
+
+
+         <div class="sw">
+            <div class="heading">Play With Backgrounds</div>
+
+            <div class="sample-backgrounds">
+                <a href="#" class="sample-background s1"><img src="https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/colorstyles/img/1.jpg"></a>
+                <a href="#" class="sample-background s2"><img src="https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/colorstyles/img/2.jpg"></a>
+                <a href="#" class="sample-background s3"><img src="https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/colorstyles/img/3.jpg"></a>
+                <a href="#" class="sample-background s4"><img src="https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/colorstyles/img/4.jpg"></a>
+                <a href="#" class="sample-background s5"><img src="https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/colorstyles/img/5.jpg"></a>
+
+            </div>
+        </div>
+         <div class="sw">
+            <div class="heading">Play With Patterns</div>
+
+            <div class="sample-patterns">
+                <a href="#" class="sample-background p1"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/footer_lodyas.png"></a>
+                <a href="#" class="sample-background p2"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/escheresque_ste.png"></a>
+                <a href="#" class="sample-background p3"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/black_lozenge.png"></a>
+                <a href="#" class="sample-background p4"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/office.png"></a>
+                <a href="#" class="sample-background p5"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/dark_wall.png"></a>
+                <br />
+                <a href="#" class="sample-background p6"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/retina_wood.png"></a>
+                <a href="#" class="sample-background p7"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/escheresque.png"></a>
+                <a href="#" class="sample-background p8"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/redox_01.png"></a>
+                <a href="#" class="sample-background p9"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/subtle_stripes.png"></a>
+                <a href="#" class="sample-background p10"><img src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/10/gplaypattern.png"></a>
+
+            </div>
+        </div>
+
+        <div class="sw">
+         <div class="heading"> These are just some examples. You can choose any colors you want!</div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- color styles -->
+    <div class="above-nav container">
+        <div class="social-top">
+                 <a class="rss" target="_blank" href="#"><i class="fas fa-rss"></i> </a>                 <a class="dribbble" target="_blank" href="#"><i class="fab fa-dribbble"></i> </a>                 <a class="vimeo" target="_blank" href="#"><i class="fab fa-vimeo-v"></i> </a>                 <a class="youtube" target="_blank" href="#"><i class="fab fa-youtube"></i> </a>                 <a class="twitch" target="_blank" href="#"><i class="fab fa-twitch"></i></a>                 <a class="instagram" target="_blank" href="#"><i class="fab fa-instagram"></i></a>                 <a class="steam" target="_blank" href="#"><i class="fab fa-steam"></i></a>                 <a class="pinterest" target="_blank" href="#"><i class="fab fa-pinterest"></i> </a>                 <a class="google-plus" target="_blank" href="#"><i class="fab fa-google-plus-g"></i></a>                 <a class="twitter" target="_blank" href="#"><i class="fab fa-twitter"></i></a>                 <a class="facebook" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>                        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <!-- NAVBAR
+    ================================================== -->
+      <div class="navbar-wrapper container">
+
+          <div class="logo col-lg-3 col-md-3">
+            <a class="brand" href="https://skywarriorthemes.com/blackfyre/"> <img src="https://skywarriorthemes.com/blackfyre/wp-content/themes/blackfyre/img/logo.png" alt="logo"  /> </a>
+          </div>
+
+            
+
+
+            <div class="login-info">
+        <a class="register-btn" href="https://skywarriorthemes.com/blackfyre/user-registration-2/"><i class="fas fa-pen-square"></i> <span>Register</span></a>
+    <i>or</i>
+        <a class="login-btn"><i class="fas fa-lock"></i> <span>Sign in</span></a>
+
+        <div id="mcTooltipWrapper" class="login-tooltip" >
+            <div id="mcTooltip" >
+                <div id="login_tooltip"><div class="closeto"> <span><i class="fas fa-close"></i> </span></div>
+                    <form name="LoginWithAjax_Form" id="LoginWithAjax_Form" action="https://skywarriorthemes.com/blackfyre/wp-login.php" method="post">
+
+
+                            <input type="text" name="log" placeholder="Username" id="lwa_user_login" class="input" value="" />
+                            <input type="password" placeholder="Password" name="pwd" id="lwa_user_pass" class="input" value="" />
+
+
+                    			<style type="text/css" media="screen">
+				.login-action-login #loginform,
+				.login-action-lostpassword #lostpasswordform,
+				.login-action-register #registerform {
+					width: 302px !important;
+				}
+				#login_error,
+				.message {
+					width: 322px !important;
+				}
+				.login-action-login #loginform .gglcptch,
+				.login-action-lostpassword #lostpasswordform .gglcptch,
+				.login-action-register #registerform .gglcptch {
+					margin-bottom: 10px;
+				}
+			</style>
+		<div class="gglcptch gglcptch_v2"><div id="gglcptch_recaptcha_1170972643" class="gglcptch_recaptcha"></div>
+				<noscript>
+					<div style="width: 302px;">
+						<div style="width: 302px; height: 422px; position: relative;">
+							<div style="width: 302px; height: 422px; position: absolute;">
+								<iframe src="https://www.google.com/recaptcha/api/fallback?k=6Le4e0EUAAAAAKN0UC4elmmcdL4N-CVuVPE5MFF-" frameborder="0" scrolling="no" style="width: 302px; height:422px; border-style: none;"></iframe>
+							</div>
+						</div>
+						<div style="border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px; height: 60px; width: 300px;">
+							<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px !important; height: 40px !important; border: 1px solid #c1c1c1 !important; margin: 10px 25px !important; padding: 0px !important; resize: none !important;"></textarea>
+						</div>
+					</div>
+				</noscript></div>                            <input name="rememberme" type="checkbox" id="lwa_rememberme" value="forever">
+                            <label>Remember Me</label>
+                            <a id="LoginWithAjax_Links_Remember" href="https://skywarriorthemes.com/blackfyre/wp-login.php?action=lostpassword" title="Password Lost and Found">Lost your password?</a>
+
+                            <button type="submit"  class="button-small"  name="wp-submit" id="lwa_wp-submit" value="GO " tabindex="100" >GO </button>
+
+                            <input type="hidden" name="redirect_to" value="https://skywarriorthemes.com/blackfyre/" />
+                            <input type="hidden" name="lwa_profile_link" value="" />
+                    </form>
+                    <a class="register-link" href="https://skywarriorthemes.com/blackfyre/user-registration/"> Sign up </a>
+
+
+
+                <form name="LoginWithAjax_Form" id="LoginWithAjax_Form1" action="https://skywarriorthemes.com/blackfyre/wp-login.php" method="post">
+                    <div id="social_login" class="reg" >
+                                                          </div>
+                  </form>
+                </div>
+            </div>
+            <div id="mcttCo"></div>
+        </div>
+
+</div>
+
+    
+          <div class="col-lg-12 col-md-12 nav-top-divider"></div>
+          <div class="navbar navbar-inverse navbar-static-top col-lg-12 col-md-12 " role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fas fa-bars"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse">
+
+                              <div class="menu-default-container"><ul  class="nav navbar-nav"><li id="menu-item-2082" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-2082"><a href="https://skywarriorthemes.com/blackfyre/"><span class="fas fa-building"></span> Home</a>
+<ul class="sub-menu">
+	<li id="menu-item-1765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1765"><a href="https://skywarriorthemes.com/blackfyre/"><span class="00"></span> Slider</a></li>
+	<li id="menu-item-1771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1771"><a href="https://skywarriorthemes.com/blackfyre/homepage/"><span class="00"></span> Promote</a></li>
+	<li id="menu-item-1694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1694"><a href="https://skywarriorthemes.com/blackfyre/homepage-blog-style/"><span class="00"></span> Blog style</a></li>
+	<li id="menu-item-1779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1779"><a href="https://skywarriorthemes.com/blackfyre/homepage-parallax/"><span class="00"></span> Parallax</a></li>
+</ul>
+</li>
+<li id="menu-item-1670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1670 megamenu"><a href="https://skywarriorthemes.com/blackfyre/features/"><span class="fas fa-star"></span> Features</a>
+<ul class="sub-menu">
+	<li id="menu-item-1780" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1780"><a href="#"><span class="fa-fighter-jet"></span> Feugiat facilisis</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1770" class="menu-item menu-item-type-post_type menu-item-object-clan menu-item-1770"><a href="https://skywarriorthemes.com/blackfyre/clan/virtus-pro/"><span class="00"></span> Custom background</a></li>
+		<li id="menu-item-1866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1866"><a href="https://skywarriorthemes.com/blackfyre/user-registration/"><span class="00"></span> Front-end forms</a></li>
+		<li id="menu-item-1872" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1872"><a href="https://skywarriorthemes.com/blackfyre/fusce-id-justo/"><span class="00"></span> Eye-catching design</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1782"><a href="#"><span class="fa-gamepad"></span> Nulla porttitor</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1868" class="menu-item menu-item-type-post_type menu-item-object-matches menu-item-1868"><a href="https://skywarriorthemes.com/blackfyre/matches/weekend-match/"><span class="00"></span> Team matches</a></li>
+		<li id="menu-item-1871" class="menu-item menu-item-type-post_type menu-item-object-clan menu-item-1871"><a href="https://skywarriorthemes.com/blackfyre/clan/navi/"><span class="00"></span> Clan page</a></li>
+		<li id="menu-item-1873" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1873"><a href="http://skywarriorthemes.com/blackfyre/members/admin/"><span class="00"></span> Custom profile</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1781"><a href="#"><span class="fa-institution"></span> dignissim faucis</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1865 current_page_item"><a href="https://skywarriorthemes.com/blackfyre/members/">Members page</a></li>
+		<li id="menu-item-1869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1869"><a href="https://skywarriorthemes.com/blackfyre/matches/"><span class="00"></span> Matches page</a></li>
+		<li id="menu-item-1870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1870"><a href="https://skywarriorthemes.com/blackfyre/clans-page/"><span class="00"></span> Teams page</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-2013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2013"><a href="https://skywarriorthemes.com/blackfyre/matches/"><span class="fas fa-gamepad"></span> Clan wars</a>
+<ul class="sub-menu">
+	<li id="menu-item-2012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2012 current_page_item"><a href="https://skywarriorthemes.com/blackfyre/members/"><span class="fa-user"></span> Members</a></li>
+	<li id="menu-item-1635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1635"><a href="https://skywarriorthemes.com/blackfyre/clans-page/"><span class="fa-group"></span> Teams</a></li>
+	<li id="menu-item-1634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1634"><a href="https://skywarriorthemes.com/blackfyre/matches/"><span class="fa-crosshairs"></span> Matches</a></li>
+</ul>
+</li>
+<li id="menu-item-1624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1624"><a href="https://skywarriorthemes.com/blackfyre/blog-right-sidebar/"><span class="fas fa-rss"></span> Blog</a>
+<ul class="sub-menu">
+	<li id="menu-item-1626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"><a href="https://skywarriorthemes.com/blackfyre/blog-right-sidebar/"><span class="00"></span> Blog Right Sidebar</a></li>
+	<li id="menu-item-1623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1623"><a href="https://skywarriorthemes.com/blackfyre/blog-left-sidebar/"><span class="00"></span> Blog Left Sidebar</a></li>
+	<li id="menu-item-1622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1622"><a href="https://skywarriorthemes.com/blackfyre/blog-isotope/"><span class="00"></span> Blog Isotope</a></li>
+	<li id="menu-item-1621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1621"><a href="https://skywarriorthemes.com/blackfyre/blog-full-width/"><span class="00"></span> Blog Full Width</a></li>
+</ul>
+</li>
+<li id="menu-item-1887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1887"><a href="https://skywarriorthemes.com/blackfyre/forums/"><span class="fas fa-users"></span> Forums</a></li>
+<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="https://skywarriorthemes.com/blackfyre/shop/"><span class="fas fa-shopping-cart"></span> Shop</a></li>
+<li id="menu-item-1636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1636"><a href="https://skywarriorthemes.com/blackfyre/contact/"><span class="fas fa-envelope"></span> Contact</a></li>
+</ul></div>                   <div class="search-top">
+                <form method="get" id="sform" action="https://skywarriorthemes.com/blackfyre/">
+                    <input type="search" autocomplete="off" name="s">
+
+                    <input type="hidden" name="post_type[]" value="matches" />
+                    <input type="hidden" name="post_type[]" value="clan" />
+                    <input type="hidden" name="post_type[]" value="post" />
+                    <input type="hidden" name="post_type[]" value="page" />
+                </form>
+            </div>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+    </div><!-- /.navbar -->
+        <div class="after-nav container">
+                <div class="ticker-title"><i class="fas fa-bullhorn"></i> &nbsp;Latest news</div>
+                                    <ul id="webticker" >
+                                                    <li id='item1'>
+                                                                Morbi fringilla orci non consectetur fringilla <a href="#">inceptos</a> ariostes. -                             </li>
+                                                    <li id='item2'>
+                                                                
+Nunc ac efficitur nunc. Nam et ligula eros. -                             </li>
+                                                    <li id='item3'>
+                                                                
+Sed quis odio quis tortor feugiat eleifend <a href="#">consectetur fringilla</a> uspendisse sed tincidunt quam. -                             </li>
+                                                    <li id='item4'>
+                                                                
+Morbi fringilla orci non consectetur fringilla <a href="#">inceptos</a> ariostes. -                             </li>
+                                                    <li id='item5'>
+                                                                
+Etiam venenatis odio eu felis auctor, eu malesuada dui maximus. Mauris eget mattis libero. -                             </li>
+                                                    <li id='item6'>
+                                                                                            </li>
+                                            </ul>
+                        </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="page normal-page container">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                                <div id="buddypress" class="">
+
+	
+	<div id="item-header" role="complementary">
+
+		
+<div class="profile">
+
+    <div class="profile-info row">
+        <div class="profile-fimage profile-media">
+
+                            <div class="hiddenoverflow"><img alt="img" src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/02/c51-1170x280.jpg" /></div>
+                        
+        </div>
+                    <div class="friendswrapper">
+                <div class="friends-count"><i class="fas fa-users"></i>
+                    29 friends</div>
+                
+            </div>
+                <div class="col-lg-12 col-md-12 nav-top-divider"></div>
+
+                    <div class="messagewrapper">
+                            </div>
+        
+        <div class="avatar-card">
+                        <img alt="img" src="https://skywarriorthemes.com/blackfyre/wp-content/uploads/2015/02/9-195x195.jpg" />
+            <p>
+                Herkethn            </p>
+                    </div>
+    </div></div>
+
+	</div><!-- #item-header -->
+
+	<div id="item-nav">
+		<div class="item-list-tabs no-ajax" id="object-nav" role="navigation">
+			<ul>
+
+				<li id="profile-personal-li"  class="current selected"><a id="user-profile" href="https://skywarriorthemes.com/blackfyre/members/herkethn/profile/"><i class="far fa-user"></i> profile</a></li><li id="activity-personal-li" ><a id="user-activity" href="https://skywarriorthemes.com/blackfyre/members/herkethn/activity/"><i class="fas fa-bolt"></i> activity</a></li><li id="friends-personal-li" ><a id="user-friends" href="https://skywarriorthemes.com/blackfyre/members/herkethn/friends/"><i class="fas fa-users"></i> friends</a></li><li id="groups-personal-li" ><a id="user-groups" href="https://skywarriorthemes.com/blackfyre/members/herkethn/groups/"><i class="fas fa-users"></i> groups</a></li><li id="forums-personal-li" ><a id="user-forums" href="https://skywarriorthemes.com/blackfyre/members/herkethn/forums/">Forums</a></li>
+				
+			</ul>
+		</div>
+	</div><!-- #item-nav -->
+
+	<div id="item-body" >
+
+		    <div class="col-lg-8 col-md-8 block">
+        <div class="title-wrapper">
+        	<h3 class="widget-title"><i class="fas fa-bullhorn"></i> INTRODUCTION</h3>
+        </div>
+        <div class="wcontainer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas rhoncus nisi ut ullamcorper. Aenean facilisis venenatis justo eu rhoncus. Integer facilisis faucibus lacus, non eleifend tellus. Maecenas eu pulvinar tellus. Curabitur mollis urna elit, vitae suscipit quam aliquet ut. Aenean lobortis dui mi, eget accumsan ipsum suscipit egestas. Vivamus ut porttitor erat. Donec hendrerit vulputate condimentum. Nullam sit amet nunc felis. Etiam non magna sit amet leo elementum accumsan sed nec ante. Pellentesque consequat malesuada mollis.<br />
+<br />
+Phasellus efficitur dolor nec felis auctor, eu lacinia quam aliquet. Praesent nec rhoncus augue. Donec tempor dolor sit amet dui aliquam elementum. Cras varius laoreet neque in ultrices. Nulla fringilla massa interdum diam vestibulum bibendum. Sed viverra egestas augue et finibus. Fusce id urna magna. Aliquam erat volutpat. Nullam venenatis tempor velit, vel lacinia justo condimentum in. Curabitur mollis urna elit, vitae suscipit quam aliquet ut. Aenean lobortis dui mi, eget accumsan ipsum suscipit egestas. Vivamus ut porttitor erat. Donec hendrerit vulputate condimentum. Nullam sit amet nunc felis. Etiam non magna sit amet leo elementum accumsan sed nec ante. Pellentesque consequat malesuada mollis.        </div>
+    </div>
+
+
+		<div class="col-lg-4 col-md-4">
+			<div class="block">
+	        	<div class="title-wrapper">
+	         		<h3 class="widget-title"><i class="fas fa-info-circle"></i> ABOUT  </h3>
+				</div>
+				<ul class="about-profile">
+
+	            <!--name-->
+	            	            	<li><strong>NAME: </strong>
+	            	John	            Smith </li>
+	            	            <!--name-->
+
+
+
+	             <!--location-->
+	            	            <li><strong> LOCATION: </strong> United Kingdom, London	            </li>
+                	            <!--location-->
+
+	            <!--age-->
+	            
+	            <li><strong>AGE: </strong>
+                     <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width">
+		<meta name='robots' content='noindex,follow' />
+	<title>WordPress &rsaquo; Error</title>
+	<style type="text/css">
+		html {
+			background: #f1f1f1;
+		}
+		body {
+			background: #fff;
+			color: #444;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+			margin: 2em auto;
+			padding: 1em 2em;
+			max-width: 700px;
+			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+		}
+		h1 {
+			border-bottom: 1px solid #dadada;
+			clear: both;
+			color: #666;
+			font-size: 24px;
+			margin: 30px 0 0 0;
+			padding: 0;
+			padding-bottom: 7px;
+		}
+		#error-page {
+			margin-top: 50px;
+		}
+		#error-page p {
+			font-size: 14px;
+			line-height: 1.5;
+			margin: 25px 0 20px;
+		}
+		#error-page code {
+			font-family: Consolas, Monaco, monospace;
+		}
+		ul li {
+			margin-bottom: 10px;
+			font-size: 14px ;
+		}
+		a {
+			color: #0073aa;
+		}
+		a:hover,
+		a:active {
+			color: #00a0d2;
+		}
+		a:focus {
+			color: #124964;
+			-webkit-box-shadow:
+				0 0 0 1px #5b9dd9,
+				0 0 2px 1px rgba(30, 140, 190, 0.8);
+			box-shadow:
+				0 0 0 1px #5b9dd9,
+				0 0 2px 1px rgba(30, 140, 190, 0.8);
+			outline: none;
+		}
+		.button {
+			background: #f7f7f7;
+			border: 1px solid #ccc;
+			color: #555;
+			display: inline-block;
+			text-decoration: none;
+			font-size: 13px;
+			line-height: 26px;
+			height: 28px;
+			margin: 0;
+			padding: 0 10px 1px;
+			cursor: pointer;
+			-webkit-border-radius: 3px;
+			-webkit-appearance: none;
+			border-radius: 3px;
+			white-space: nowrap;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing:    border-box;
+			box-sizing:         border-box;
+
+			-webkit-box-shadow: 0 1px 0 #ccc;
+			box-shadow: 0 1px 0 #ccc;
+			 vertical-align: top;
+		}
+
+		.button.button-large {
+			height: 30px;
+			line-height: 28px;
+			padding: 0 12px 2px;
+		}
+
+		.button:hover,
+		.button:focus {
+			background: #fafafa;
+			border-color: #999;
+			color: #23282d;
+		}
+
+		.button:focus {
+			border-color: #5b9dd9;
+			-webkit-box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
+			box-shadow: 0 0 3px rgba(0, 115, 170, 0.8);
+			outline: none;
+		}
+
+		.button:active {
+			background: #eee;
+			border-color: #999;
+			 -webkit-box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
+			 box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
+			 -webkit-transform: translateY(1px);
+			 -ms-transform: translateY(1px);
+			 transform: translateY(1px);
+		}
+
+			</style>
+</head>
+<body id="error-page">
+	<p>The site is experiencing technical difficulties.</p></body>
+</html>
+	

@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+skywarriorthemes.com	TRUE	/blackfyre/	FALSE	1999999999	wordpress_test_cookie	WP+Cookie+check
+skywarriorthemes.com	TRUE	/blackfyre/	FALSE	1999999999	woocommerce_items_in_cart	1
+skywarriorthemes.com	TRUE	/blackfyre/	FALSE	1999999999	wp_woocommerce_session_17d662fb8d63c0bc962a1c1559f878d6	cc358c07bbad88a50eb6223af5949262%7C%7C1584982825%7C%7C1584979225%7C%7C4ee1602de28d6fa9d22da1aaf31e8f1a
+skywarriorthemes.com	TRUE	/blackfyre/	FALSE	1999999999	woocommerce_cart_hash	47952469dfb656d98d800a717fb76b0f
+skywarriorthemes.com	TRUE	/	FALSE	1999999999	PHPSESSID	hd9dutgqqv9nkvllag1pn4qu5c
+
